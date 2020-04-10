@@ -10066,6 +10066,7 @@ var white_domains = {
   }
 };
 
+var hasOwnProperty = Object.hasOwnProperty;
 var subnetIpRangeList = [
   0, 1,
   167772160, 184549376,	//10.0.0.0/8
@@ -10073,19 +10074,12 @@ var subnetIpRangeList = [
   3232235520, 3232301056,	//192.168.0.0/16
   2130706432, 2130706688	//127.0.0.0/24
 ];
-
-var hasOwnProperty = Object.hasOwnProperty;
-
 function check_ipv4(host) {
-  // check if the ipv4 format (TODO: ipv6)
   //   http://home.deds.nl/~aeron/regex/
   var re_ipv4 = /^\d+\.\d+\.\d+\.\d+$/g;
-  if (re_ipv4.test(host)) {
-    // in theory, we can add chnroutes test here.
-    // but that is probably too much an overkill.
-    return true;
-  }
+  if (re_ipv4.test(host)) return true;
 }
+
 function convertAddress(ipchars) {
   var bytes = ipchars.split('.');
   var result = (bytes[0] << 24) |
@@ -10094,63 +10088,43 @@ function convertAddress(ipchars) {
     (bytes[3]);
   return result >>> 0;
 }
+
 function isInSubnetRange(ipRange, intIp) {
   for (var i = 0; i < 10; i += 2) {
     if (ipRange[i] <= intIp && intIp < ipRange[i + 1])
       return true;
   }
 }
+
 function getProxyFromDirectIP(strIp) {
   var intIp = convertAddress(strIp);
-  if (isInSubnetRange(subnetIpRangeList, intIp)) {
-    return direct;
-  }
+  if (isInSubnetRange(subnetIpRangeList, intIp)) return direct;
   return ip_proxy;
 }
+
 function isInDomains(domain_dict, host) {
   var suffix;
   var pos1 = host.lastIndexOf('.');
-
   suffix = host.substring(pos1 + 1);
-  if (suffix == "cn" || suffix == "nd" || suffix == "localhost" ||
-    suffix == "local" || suffix == "dev" || suffix == "test" ||
-    suffix == "onion" || suffix == "exit" || suffix == "bitnet" ||
-    suffix == "uucp" || suffix == "example" || suffix == "invalid") {
+  if (suffix == "cn" || suffix == "localhost" || suffix == "local")
     return true;
-  }
   var domains = domain_dict[suffix];
-  if (domains === undefined) {
-    return false;
-  }
+  if (domains === undefined) return false;
   host = host.substring(0, pos1);
   var pos = host.lastIndexOf('.');
-
   while (1) {
-    if (pos <= 0) {
-      if (hasOwnProperty.call(domains, host)) {
-        return true;
-      } else {
-        return false;
-      }
-    }
+    if (pos <= 0) return hasOwnProperty.call(domains, host);
     suffix = host.substring(pos + 1);
-    if (hasOwnProperty.call(domains, suffix)) {
-      return true;
-    }
+    if (hasOwnProperty.call(domains, suffix)) return true;
     pos = host.lastIndexOf('.', pos - 1);
   }
 }
+
 function FindProxyForURL(url, host) {
   url = "" + url;
   host = "" + host;
-  if (isPlainHostName(host) === true) {
-    return direct;
-  }
-  if (check_ipv4(host) === true) {
-    return getProxyFromDirectIP(host);
-  }
-  if (isInDomains(white_domains, host) === true) {
-    return nowall_proxy;
-  }
+  if (isPlainHostName(host) === true) return direct;
+  if (check_ipv4(host) === true) return getProxyFromDirectIP(host);
+  if (isInDomains(white_domains, host) === true) return nowall_proxy;
   return wall_proxy;
 }

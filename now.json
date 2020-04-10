@@ -3,7 +3,7 @@
   "routes": [
     {
       "src": "/",
-      "dest": "/whitelist.pac"
+      "dest": "/pac.js"
     }
   ]
 }
