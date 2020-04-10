@@ -1,7 +1,10 @@
-var wall_proxy = "SOCKS5 127.0.0.1:1080;";
-var nowall_proxy = "DIRECT;";
-var direct = "DIRECT;";
-var ip_proxy = "DIRECT;";
+/**
+ * source：https://github.com/ifyour/ipac/
+ * update: 2020-04-11
+ */
+
+// Auto fallback proxy
+var wall_proxy = "SOCKS5 127.0.0.1:1080; HTTPS haotizi.tk:443; HTTP 127.0.0.1:1087;";
 
 var white_domains = {
   "asia": {
@@ -10066,6 +10069,9 @@ var white_domains = {
   }
 };
 
+var nowall_proxy = "DIRECT;";
+var direct = "DIRECT;";
+var ip_proxy = "DIRECT;";
 var hasOwnProperty = Object.hasOwnProperty;
 var subnetIpRangeList = [
   0, 1,
@@ -10074,6 +10080,7 @@ var subnetIpRangeList = [
   3232235520, 3232301056,	//192.168.0.0/16
   2130706432, 2130706688	//127.0.0.0/24
 ];
+
 function check_ipv4(host) {
   //   http://home.deds.nl/~aeron/regex/
   var re_ipv4 = /^\d+\.\d+\.\d+\.\d+$/g;
