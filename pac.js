@@ -4,7 +4,7 @@
  */
 
 // Auto fallback proxy
-var wall_proxy = "SOCKS5 127.0.0.1:1080; HTTPS haotizi.tk:443; HTTP 127.0.0.1:1087;";
+var wall_proxy = "SOCKS5 127.0.0.1:1080; SOCKS5 192.168.199.214:1080; HTTPS haotizi.tk:443; HTTP 127.0.0.1:1087;";
 
 var white_domains = {
   "asia": {
