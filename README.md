@@ -1,11 +1,13 @@
-# pac
+# iPac
+
+> Another China domain whitelist for the SwitchyOmega plugin.
 
 ## Usage
 
-- SwitchyOmega 新建情景模式
-- 选择 Pac 情景模式选项，名称随意
-- PAC 网址填入 `https://ipac.now.sh/`
-- 点立即更新，然后保存
+- Open SwitchyOmega and select New Profile
+- Select the Pac Scenario Mode option with any name you want.
+- PAC web site filled in `https://ipac.now.sh/`
+- Point update immediately, then save
 - done :)
 
 ## License
