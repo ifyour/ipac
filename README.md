@@ -4,7 +4,7 @@
 
 ## Usage
 
-- Open SwitchyOmega and select New Profile
+- Open SwitchyOmega and select `PAC profile`
 - Select the Pac Scenario Mode option with any name you want.
 - PAC web site filled in `https://ipac.now.sh/`
 - Point update immediately, then save
