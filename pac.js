@@ -247,6 +247,8 @@ var white_domains = {
     "xiapu": 1,
     "ychdzx": 1
   }, "com": {
+    "yuque": 1,
+    "nlark": 1,
     "msstatic": 1,
     "huya": 1,
     "bilivideo": 1,
