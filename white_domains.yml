@@ -1,4 +1,12 @@
 ---
+# 贡献举例：
+# Yml-JSON 互转：https://www.json2yaml.com/convert-yaml-to-json
+# com:
+#   baidu: 1 # 对应 baidu.com
+# hk:
+#   xin.com: 1 # 对应 xin.com.hk
+
+# ⚠️该名单为中国大陆网址白名单，以下网址不走代理
 asia:
   moecloud: 1
 lol:
@@ -10046,6 +10054,6 @@ us:
   pangu: 1
 ws:
   0798: 1
-# xx.中国
+# xx.中国 待贡献?
 xn--fiqs8s:
   xx : 1
