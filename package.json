@@ -1,0 +1,25 @@
+{
+  "name": "ipac",
+  "version": "1.0.0",
+  "description": "[![Gitpod ready](https://img.shields.io/badge/Gitpod-ready-blue?logo=gitpod)](https://gitpod.io/#https://github.com/ifyour/ipac)",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifyour/ipac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifyour/ipac/issues"
+  },
+  "homepage": "https://github.com/ifyour/ipac#readme",
+  "devDependencies": {
+    "date-fns": "^2.12.0",
+    "yamljs": "^0.3.0"
+  }
+}
