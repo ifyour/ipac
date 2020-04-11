@@ -1,7 +1,7 @@
 {
   "name": "ipac",
   "version": "1.0.0",
-  "description": "[![Gitpod ready](https://img.shields.io/badge/Gitpod-ready-blue?logo=gitpod)](https://gitpod.io/#https://github.com/ifyour/ipac)",
+  "description": "🗻 Self-use mainland China domain whitelist, full of bias.",
   "main": "index.js",
   "scripts": {
     "build": "node index.js",
