@@ -1,3 +1,5 @@
+// TODO: exntes template.js
+module.exports = `
 /**
  * source：https://github.com/ifyour/ipac/
  * update: #TEMPLATE_TIME#
@@ -23,7 +25,7 @@ var subnetIpRangeList = [
 
 function check_ipv4(host) {
   // http://home.deds.nl/~aeron/regex/
-  var re_ipv4 = /^\d+\.\d+\.\d+\.\d+$/g;
+  var re_ipv4 = /^\\\d+\\\.\\\d+\\\.\\\d+\\\.\\\d+$/g;
   if (re_ipv4.test(host)) return true;
 }
 
@@ -75,3 +77,4 @@ function FindProxyForURL(url, host) {
   if (isInDomains(white_domains, host) === true) return nowall_proxy;
   return wall_proxy;
 }
+`
