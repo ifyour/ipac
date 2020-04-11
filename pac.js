@@ -10085,7 +10085,7 @@ var subnetIpRangeList = [
 ];
 
 function check_ipv4(host) {
-  //   http://home.deds.nl/~aeron/regex/
+  // http://home.deds.nl/~aeron/regex/
   var re_ipv4 = /^\d+\.\d+\.\d+\.\d+$/g;
   if (re_ipv4.test(host)) return true;
 }
