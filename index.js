@@ -2,12 +2,18 @@ const path = require('path');
 const { writeFileSync, readFileSync } = require('fs');
 const yamljs = require('yamljs');
 const { format, utcToZonedTime } = require('date-fns-tz');
-
+const contentExtedns = require('./contentExtedns');
 
 const TEMPLATE = './template.js';
-// TODO: https_template extends template
 const HTTPS_TEMPLATE = './https_tmp.js';
 const DOMAINS_YML = './white_domains.yml';
+
+contentExtedns({
+  source: TEMPLATE,
+  target: HTTPS_TEMPLATE,
+  contentFrom: 'SOCKS5 127.0.0.1:1080;',
+  contentTo: 'HTTPS haotizi.tk:443;',
+})
 
 generatePac(TEMPLATE, DOMAINS_YML, './dist.js');
 generatePac(HTTPS_TEMPLATE, DOMAINS_YML, './dist_https.js');
