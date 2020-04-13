@@ -4,6 +4,10 @@
     {
       "src": "/",
       "dest": "/dist.js"
+    },
+    {
+      "src": "/https",
+      "dest": "/dist_https.js"
     }
   ]
 }
