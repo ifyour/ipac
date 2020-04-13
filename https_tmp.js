@@ -4,7 +4,7 @@
  */
 
 // Auto fallback proxy
-var wall_proxy = "HTTPS haotizi.tk:443; SOCKS5 127.0.0.1:1080;";
+var wall_proxy = "HTTPS haotizi.tk:443; SOCKS5 127.0.0.1:1080; SOCKS5 192.168.199.214:1080;";
 
 // var demo_obj = { com: { baidu: 1, qq: 1 } };
 var white_domains = '#TEMPLATE_CONTENT#';
