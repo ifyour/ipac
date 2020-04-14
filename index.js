@@ -2,13 +2,13 @@ const path = require('path');
 const { writeFileSync, readFileSync } = require('fs');
 const yamljs = require('yamljs');
 const { format, utcToZonedTime } = require('date-fns-tz');
-const contentExtedns = require('./contentExtedns');
+const contentExtends = require('./contentExtends');
 
 const TEMPLATE = './template.js';
 const HTTPS_TEMPLATE = './https_tmp.js';
 const DOMAINS_YML = './white_domains.yml';
 
-contentExtedns({
+contentExtends({
   source: TEMPLATE,
   target: HTTPS_TEMPLATE,
   contentFrom: 'SOCKS5 127.0.0.1:1080;',

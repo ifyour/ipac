@@ -3,14 +3,14 @@ const { writeFileSync, readFileSync } = require('fs');
 
 // Usage:
 
-// contentExtedns({
+// contentExtends({
 //   source: './tmp.js',
 //   target: './dist.js',
 //   contentFrom: `Content to be replaced`,
 //   contentTo: `New Content`
 // });
 
-module.exports = function contentExtedns({ source, target, contentFrom, contentTo }) {
+module.exports = function contentExtends({ source, target, contentFrom, contentTo }) {
   const resolve = file => path.join(__dirname, file);
   const buffer = readFileSync(resolve(source));
   const reg = new RegExp(contentFrom, 'g');
