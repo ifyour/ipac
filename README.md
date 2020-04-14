@@ -21,12 +21,12 @@
 
 Param | Type | Default | Require | Details
 ------| -----| ------ | -------- | --------
-socks5 | `number` | 1080 | false | SOCKS5 port, Short: `s`
-http | `number` | 1087 | false | HTTP port, Short: `h`
+socks5 | `number` | 1080 | false | SOCKS5 port, short: `s`
+http   | `number` | 1087 | false | HTTP port, short: `h`
 
 
 **Example**
-- https://ipac.now.sh/api/port/?socks5=123&http=4321
+- https://ipac.now.sh/api/port/?socks5=1234&http=4321
 - https://ipac.now.sh/?s=1234&h=4321
 - https://ipac.now.sh/?s=1234
 - https://ipac.now.sh/?h=4321
