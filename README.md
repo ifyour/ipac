@@ -6,6 +6,10 @@
 
 ## Usage
 
+<p align="left">
+<img  width="65%" alt="usage demo" src="https://user-images.githubusercontent.com/15377484/79173191-66b33180-7e29-11ea-9502-94de0231a3f9.jpg">
+</p>
+
 - Open SwitchyOmega and select `New Profile`
 - Select the `PAC profile` option with any name you want.
 - PAC web site filled in `https://ipac.now.sh/`
@@ -27,10 +31,6 @@ http | `string` | 1087 | false | HTTP port, Short: `h`
 - https://ipac.now.sh/?s=1234
 - https://ipac.now.sh/?h=4321
 
-
-<p align="left">
-<img  width="65%" alt="usage demo" src="https://user-images.githubusercontent.com/15377484/79173191-66b33180-7e29-11ea-9502-94de0231a3f9.jpg">
-</p>
 
 ## License
 
