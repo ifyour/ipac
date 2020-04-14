@@ -21,8 +21,8 @@
 
 Param | Type | Default | Require | Details
 ------| -----| ------ | -------- | --------
-socks5 | `string` | 1080 | false | SOCKS5 port, Short: `s`
-http | `string` | 1087 | false | HTTP port, Short: `h`
+socks5 | `number` | 1080 | false | SOCKS5 port, Short: `s`
+http | `number` | 1087 | false | HTTP port, Short: `h`
 
 
 **Example**
