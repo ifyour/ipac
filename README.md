@@ -12,6 +12,10 @@
 - Click `update immediately`, then save
 - done :)
 
+<p align="left">
+<img  width="65%" alt="usage demo" src="https://user-images.githubusercontent.com/15377484/79173191-66b33180-7e29-11ea-9502-94de0231a3f9.jpg">
+</p>
+
 ## License
 
 Licensed under [The WTFPL License](./LICENSE)
