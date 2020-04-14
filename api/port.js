@@ -18,8 +18,8 @@ function generatePac(
 
   return new Promise(async (resolve, reject) => {
     try {
-      const res = await axios.get('https://api.github.com/repos/ifyour/ipac/branches/master');
-      const lastBuildTime = get(res, 'data.commit.commit.committer.date') || new Date();
+      const repoDetail = await axios.get('https://api.github.com/repos/ifyour/ipac/branches/master');
+      const lastBuildTime = get(repoDetail, 'data.commit.commit.committer.date') || new Date();
 
       const ZONE_DATE = utcToZonedTime(lastBuildTime, 'Asia/Shanghai');
       const NOW_TIME = format(ZONE_DATE, TIME_FORMAT);
