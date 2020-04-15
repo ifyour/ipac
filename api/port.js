@@ -7,10 +7,13 @@ const { format, utcToZonedTime } = require('date-fns-tz');
 
 
 function generatePac(
-  socks5Port,
-  httpPort,
-  s = 1080,
-  h = 1087,
+  {
+    socks5Port,
+    httpPort,
+    s = 1080,
+    h = 1087,
+    ip = '127.0.0.1',
+  }
 ) {
   const TEMPLATE = '../template.js';
   const DOMAINS_YML = '../white_domains.yml';
@@ -31,7 +34,8 @@ function generatePac(
         .replace(/#TEMPLATE_TIME#/g, NOW_TIME)
         .replace(/'#TEMPLATE_CONTENT#'/g, JSON.stringify(domains, null, 2))
         .replace(/:1080;/g, `:${socks5Port || s};`)
-        .replace(/:1087;/g, `:${httpPort || h};`);
+        .replace(/:1087;/g, `:${httpPort || h};`)
+        .replace(/127\.0\.0\.1/g, ip);
 
       resolve(data);
     } catch (error) {
@@ -42,8 +46,8 @@ function generatePac(
 
 
 module.exports = async (req, res) => {
-  const { query: { socks5, http, s, h } } = req;
+  const { query: { socks5, http, s, h, ip }} = req;
   res.setHeader('content-type', 'application/javascript; charset=utf-8');
-  const pacContent = await generatePac(socks5, http, s, h);
+  const pacContent = await generatePac({ socks5, http, s, h, ip });
   res.send(pacContent);
 }
