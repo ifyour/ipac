@@ -19,14 +19,16 @@
 
 ### GET `/api/port` or GET `/`
 
-Param | Type | Default | Require | Details
+Param | Type | Default | Require | Description
 ------| -----| ------ | -------- | --------
 socks5 | `number` | 1080 | false | SOCKS5 port, short: `s`
 http   | `number` | 1087 | false | HTTP port, short: `h`
+ip     | `string` | 127.0.0.1 | false | Default proxy host
 
 
 **Example**
 - https://ipac.now.sh/api/port/?socks5=1234&http=4321
+- https://ipac.now.sh/?ip=192.168.199.214
 - https://ipac.now.sh/?s=1234&h=4321
 - https://ipac.now.sh/?s=1234
 - https://ipac.now.sh/?h=4321
