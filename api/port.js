@@ -46,7 +46,7 @@ function generatePac(
 
 
 module.exports = async (req, res) => {
-  const { query }  req;
+  const { query } = req;
   res.setHeader('content-type', 'application/javascript; charset=utf-8');
   const pacContent = await generatePac(query);
   res.send(pacContent);
