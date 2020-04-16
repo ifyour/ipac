@@ -15,7 +15,7 @@ contentExtends({
   contentTo: 'HTTPS haotizi.tk:443;',
 })
 
-generatePac(TEMPLATE, DOMAINS_YML, './dist.js');
+// generatePac(TEMPLATE, DOMAINS_YML, './dist.js');
 generatePac(HTTPS_TEMPLATE, DOMAINS_YML, './dist_https.js');
 
 /**
