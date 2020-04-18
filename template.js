@@ -68,13 +68,36 @@ function isInDomains(domainDict, host) {
   }
 }
 
+let cacheMap = {};
+
+function getCache(host) {
+  return cacheMap[host];
+}
+
+function setCache(host, proxyType) {
+  let cacheSize = Object.keys(cacheMap).length;
+  if (cacheSize > 1000) {
+    cacheMap = {};
+  }
+  cacheMap[host] = proxyType;
+}
+
 // eslint-disable-next-line no-unused-vars
 function FindProxyForURL(url, host) {
-  url = '' + url;
-  host = '' + host;
+  let cacheValue = getCache(host);
+  if (cacheValue) return cacheValue;
   // eslint-disable-next-line no-undef
-  if (isPlainHostName(host) === true) return direct;
-  if (checkIpv4(host) === true) return getProxyFromDirectIP(host);
-  if (isInDomains(whiteDomains, host) === true) return nowallProxy;
+  if (isPlainHostName(host) === true) {
+    setCache(host, direct);
+    return direct;
+  }
+  if (checkIpv4(host) === true) {
+    setCache(host, direct);
+    return getProxyFromDirectIP(host);
+  }
+  if (isInDomains(whiteDomains, host) === true) {
+    setCache(host, direct);
+    return nowallProxy;
+  }
   return wallProxy;
 }
