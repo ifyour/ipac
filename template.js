@@ -6,7 +6,7 @@
 // Auto fallback proxy
 const wallProxy = 'SOCKS5 127.0.0.1:1080; HTTP 127.0.0.1:1087;';
 
-// const whiteDomains_demo = { com: { baidu: 1, qq: 1 } };
+// const whiteDomains = { com: { baidu: 1, qq: 1 } };
 const whiteDomains = '#TEMPLATE_CONTENT#';
 
 const nowallProxy = 'DIRECT;';
@@ -37,7 +37,7 @@ function convertAddress(ipchars) {
 }
 
 function isInSubnetRange(ipRange, intIp) {
-  for (const i = 0; i < 10; i += 2) {
+  for (let i = 0; i < 10; i += 2) {
     if (ipRange[i] <= intIp && intIp < ipRange[i + 1])
       return true;
   }
@@ -60,7 +60,7 @@ function isInDomains(domainDict, host) {
   host = host.substring(0, pos1);
   let pos = host.lastIndexOf('.');
   // eslint-disable-next-line no-constant-condition
-  while (1) {
+  while (true) {
     if (pos <= 0) return hasOwnProperty.call(domains, host);
     suffix = host.substring(pos + 1);
     if (hasOwnProperty.call(domains, suffix)) return true;
