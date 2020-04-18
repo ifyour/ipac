@@ -12,7 +12,7 @@ function generatePac({ socks5, http, s = 1080, h = 1087, ip = '127.0.0.1' }) {
     axios.get('https://api.github.com/repos/ifyour/ipac/branches/master')
       .then(repoDetail => {
         const lastBuildTime = get(repoDetail, 'data.commit.commit.committer.date');
-        const ZONE_DATE = utcToZonedTime(lastBuildTime  || new Date(), 'Asia/Shanghai');
+        const ZONE_DATE = utcToZonedTime(lastBuildTime || new Date(), 'Asia/Shanghai');
         const NOW_TIME = format(ZONE_DATE, 'yyyy-MM-dd HH:mm:ss');
         const domains = yamljs.load(path.resolve(__dirname, DOMAINS_YML));
         const buffer = readFileSync(path.resolve(__dirname, TEMPLATE));
