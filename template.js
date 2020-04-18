@@ -4,16 +4,16 @@
  */
 
 // Auto fallback proxy
-let wallProxy = 'SOCKS5 127.0.0.1:1080; HTTP 127.0.0.1:1087;';
+var wall_proxy = "SOCKS5 127.0.0.1:1080; HTTP 127.0.0.1:1087;";
 
 // var demo_obj = { com: { baidu: 1, qq: 1 } };
-let whiteDomains = '#TEMPLATE_CONTENT#';
+var white_domains = '#TEMPLATE_CONTENT#';
 
-let nowallProxy = 'DIRECT;';
-let direct = 'DIRECT;';
-let ipProxy = 'DIRECT;';
-let hasOwnProperty = Object.hasOwnProperty;
-let subnetIpRangeList = [
+var nowall_proxy = "DIRECT;";
+var direct = "DIRECT;";
+var ip_proxy = "DIRECT;";
+var hasOwnProperty = Object.hasOwnProperty;
+var subnetIpRangeList = [
   0, 1,
   167772160, 184549376, //10.0.0.0/8
   2886729728, 2887778304, //172.16.0.0/12
@@ -21,15 +21,15 @@ let subnetIpRangeList = [
   2130706432, 2130706688, //127.0.0.0/24
 ];
 
-function checkIpv4(host) {
+function check_ipv4(host) {
   // http://home.deds.nl/~aeron/regex/
-  let reIpv4 = /^\d+\.\d+\.\d+\.\d+$/g;
-  if (reIpv4.test(host)) return true;
+  var re_ipv4 = /^\d+\.\d+\.\d+\.\d+$/g;
+  if (re_ipv4.test(host)) return true;
 }
 
 function convertAddress(ipchars) {
-  let bytes = ipchars.split('.');
-  let result = (bytes[0] << 24) |
+  var bytes = ipchars.split('.');
+  var result = (bytes[0] << 24) |
     (bytes[1] << 16) |
     (bytes[2] << 8) |
     (bytes[3]);
@@ -37,29 +37,28 @@ function convertAddress(ipchars) {
 }
 
 function isInSubnetRange(ipRange, intIp) {
-  for (let i = 0; i < 10; i += 2) {
+  for (var i = 0; i < 10; i += 2) {
     if (ipRange[i] <= intIp && intIp < ipRange[i + 1])
       return true;
   }
 }
 
 function getProxyFromDirectIP(strIp) {
-  let intIp = convertAddress(strIp);
+  var intIp = convertAddress(strIp);
   if (isInSubnetRange(subnetIpRangeList, intIp)) return direct;
-  return ipProxy;
+  return ip_proxy;
 }
 
-function isInDomains(domainDict, host) {
-  let suffix;
-  let pos1 = host.lastIndexOf('.');
+function isInDomains(domain_dict, host) {
+  var suffix;
+  var pos1 = host.lastIndexOf('.');
   suffix = host.substring(pos1 + 1);
-  if (suffix == 'cn' || suffix == 'localhost' || suffix == 'local')
+  if (suffix == "cn" || suffix == "localhost" || suffix == "local")
     return true;
-  let domains = domainDict[suffix];
+  var domains = domain_dict[suffix];
   if (domains === undefined) return false;
   host = host.substring(0, pos1);
-  let pos = host.lastIndexOf('.');
-  // eslint-disable-next-line no-constant-condition
+  var pos = host.lastIndexOf('.');
   while (1) {
     if (pos <= 0) return hasOwnProperty.call(domains, host);
     suffix = host.substring(pos + 1);
@@ -68,13 +67,11 @@ function isInDomains(domainDict, host) {
   }
 }
 
-// eslint-disable-next-line no-unused-vars
 function FindProxyForURL(url, host) {
-  url = '' + url;
-  host = '' + host;
-  // eslint-disable-next-line no-undef
+  url = "" + url;
+  host = "" + host;
   if (isPlainHostName(host) === true) return direct;
-  if (checkIpv4(host) === true) return getProxyFromDirectIP(host);
-  if (isInDomains(whiteDomains, host) === true) return nowallProxy;
-  return wallProxy;
+  if (check_ipv4(host) === true) return getProxyFromDirectIP(host);
+  if (isInDomains(white_domains, host) === true) return nowall_proxy;
+  return wall_proxy;
 }
