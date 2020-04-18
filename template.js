@@ -53,7 +53,7 @@ function isInDomains(domainDict, host) {
   let suffix;
   const pos1 = host.lastIndexOf('.');
   suffix = host.substring(pos1 + 1);
-  if (suffix == 'cn' || suffix == 'localhost' || suffix == 'local')
+  if (suffix === 'cn' || suffix === 'localhost' || suffix === 'local')
     return true;
   let domains = domainDict[suffix];
   if (domains === undefined) return false;
