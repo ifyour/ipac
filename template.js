@@ -6,7 +6,7 @@
 // Auto fallback proxy
 const wallProxy = 'SOCKS5 127.0.0.1:1080; HTTP 127.0.0.1:1087;';
 
-// const whiteDomains = { com: { baidu: 1, qq: 1 } };
+// const whiteDomains_demo = { com: { baidu: 1, qq: 1 } };
 const whiteDomains = '#TEMPLATE_CONTENT#';
 
 const nowallProxy = 'DIRECT;';
