@@ -4,16 +4,16 @@
  */
 
 // Auto fallback proxy
-let wallProxy = 'SOCKS5 127.0.0.1:1080; HTTP 127.0.0.1:1087;';
+const wallProxy = 'SOCKS5 127.0.0.1:1080; HTTP 127.0.0.1:1087;';
 
-// var demo_obj = { com: { baidu: 1, qq: 1 } };
-let whiteDomains = '#TEMPLATE_CONTENT#';
+// const whiteDomains_demo = { com: { baidu: 1, qq: 1 } };
+const whiteDomains = '#TEMPLATE_CONTENT#';
 
-let nowallProxy = 'DIRECT;';
-let direct = 'DIRECT;';
-let ipProxy = 'DIRECT;';
-let hasOwnProperty = Object.hasOwnProperty;
-let subnetIpRangeList = [
+const nowallProxy = 'DIRECT;';
+const direct = 'DIRECT;';
+const ipProxy = 'DIRECT;';
+const hasOwnProperty = Object.hasOwnProperty;
+const subnetIpRangeList = [
   0, 1,
   167772160, 184549376, //10.0.0.0/8
   2886729728, 2887778304, //172.16.0.0/12
@@ -23,13 +23,13 @@ let subnetIpRangeList = [
 
 function checkIpv4(host) {
   // http://home.deds.nl/~aeron/regex/
-  let reIpv4 = /^\d+\.\d+\.\d+\.\d+$/g;
+  const reIpv4 = /^\d+\.\d+\.\d+\.\d+$/g;
   if (reIpv4.test(host)) return true;
 }
 
 function convertAddress(ipchars) {
-  let bytes = ipchars.split('.');
-  let result = (bytes[0] << 24) |
+  const bytes = ipchars.split('.');
+  const result = (bytes[0] << 24) |
     (bytes[1] << 16) |
     (bytes[2] << 8) |
     (bytes[3]);
@@ -44,14 +44,14 @@ function isInSubnetRange(ipRange, intIp) {
 }
 
 function getProxyFromDirectIP(strIp) {
-  let intIp = convertAddress(strIp);
+  const intIp = convertAddress(strIp);
   if (isInSubnetRange(subnetIpRangeList, intIp)) return direct;
   return ipProxy;
 }
 
 function isInDomains(domainDict, host) {
   let suffix;
-  let pos1 = host.lastIndexOf('.');
+  const pos1 = host.lastIndexOf('.');
   suffix = host.substring(pos1 + 1);
   if (suffix == 'cn' || suffix == 'localhost' || suffix == 'local')
     return true;
@@ -60,7 +60,7 @@ function isInDomains(domainDict, host) {
   host = host.substring(0, pos1);
   let pos = host.lastIndexOf('.');
   // eslint-disable-next-line no-constant-condition
-  while (1) {
+  while (true) {
     if (pos <= 0) return hasOwnProperty.call(domains, host);
     suffix = host.substring(pos + 1);
     if (hasOwnProperty.call(domains, suffix)) return true;
