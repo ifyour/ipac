@@ -5,15 +5,19 @@ const axios = require('axios');
 const get = require('lodash.get');
 const { format, utcToZonedTime } = require('date-fns-tz');
 
-function getBuildTime() {
-  const nowTimeFormat = 'yyyy-MM-dd HH:mm:ss';
+const TIME_FORMAT = 'yyyy-MM-dd HH:mm:ss';
+const TIME_ZONE = 'Asia/Shanghai';
+const TEMPLATE = '../template.js';
+const DOMAINS_DB = '../white_domains.yml';
+
+function getLastCommitTime() {
   return new Promise((resolve, reject) => {
     axios.get('https://api.github.com/repos/ifyour/ipac/branches/master')
       .then(res => {
-        const date = get(res, 'data.commit.commit.committer.date');
-        const ZONE_DATE = utcToZonedTime(date, 'Asia/Shanghai');
-        const NOW_TIME = format(ZONE_DATE, nowTimeFormat);
-        resolve(NOW_TIME);
+        const date = get(res, 'data.commit.commit.committer.date', new Date());
+        const zoneDate = utcToZonedTime(date, TIME_ZONE);
+        const nowTime = format(zoneDate, TIME_FORMAT);
+        resolve(nowTime);
       }).catch(err => {
         reject(err);
       });
@@ -24,10 +28,8 @@ function generatePac(
   { socks5, http, s = 1080, h = 1087, ip = '127.0.0.1' },
   lastCommitTime,
 ) {
-  const TEMPLATE = '../template.js';
-  const DOMAINS_YML = '../white_domains.yml';
   return new Promise(resolve => {
-    const domains = yamljs.load(path.resolve(__dirname, DOMAINS_YML));
+    const domains = yamljs.load(path.resolve(__dirname, DOMAINS_DB));
     const buffer = readFileSync(path.resolve(__dirname, TEMPLATE));
     const data = buffer.toString('utf8')
       .replace(/#TEMPLATE_TIME#/g, lastCommitTime)
@@ -44,10 +46,10 @@ module.exports = async (req, res) => {
   res.setHeader('content-type', 'application/javascript; charset=utf-8');
   let lastCommitTime;
   try {
-    lastCommitTime = await getBuildTime();
+    lastCommitTime = await getLastCommitTime();
   } catch (error) {
-    const ZONE_DATE = utcToZonedTime(new Date(), 'Asia/Shanghai');
-    lastCommitTime = format(ZONE_DATE, 'yyyy-MM-dd HH:mm:ss');
+    const zoneDate = utcToZonedTime(new Date(), TIME_ZONE);
+    lastCommitTime = format(zoneDate, TIME_FORMAT);
   }
   const pacContent = await generatePac(query, lastCommitTime);
   res.send(pacContent);
