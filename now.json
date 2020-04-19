@@ -3,7 +3,7 @@
   "routes": [
     {
       "src": "/",
-      "dest": "/api/port.js"
+      "dest": "/api/pac.js"
     },
     {
       "src": "/https",

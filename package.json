@@ -5,15 +5,16 @@
   "main": "index.js",
   "scripts": {
     "build": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "git add . && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ifyour/ipac.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["pac", "china-whiltelist-url"],
+  "author": "ifyour",
+  "license": "The WTFPL License",
   "bugs": {
     "url": "https://github.com/ifyour/ipac/issues"
   },
