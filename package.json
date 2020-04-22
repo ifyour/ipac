@@ -12,7 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/ifyour/ipac.git"
   },
-  "keywords": ["pac", "china-whiltelist-url"],
+  "keywords": [
+    "pac",
+    "china-whiltelist-url"
+  ],
   "author": "ifyour",
   "license": "The WTFPL License",
   "bugs": {
@@ -22,13 +25,11 @@
   "eslintConfig": {
     "extends": "eslint-config-ifyour"
   },
-  "devDependencies": {
-    "axios": "^0.19.2",
+  "dependencies": {
     "date-fns": "^2.12.0",
     "date-fns-tz": "^1.0.10",
+    "yamljs": "^0.3.0",
     "eslint": "^6.8.0",
-    "eslint-config-ifyour": "^1.0.6",
-    "lodash.get": "^4.4.2",
-    "yamljs": "^0.3.0"
+    "eslint-config-ifyour": "^1.0.6"
   }
 }
