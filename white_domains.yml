@@ -6,7 +6,7 @@
 # hk:
 #   xin.com: 1 # 对应 xin.com.hk
 
-# ⚠️该名单为中国大陆网址白名单，以下网址不走代理
+# 该名单为中国大陆网址白名单，以下网址不走代理
 asia:
   moecloud: 1
 lol:
@@ -247,6 +247,7 @@ co:
   xiapu: 1
   ychdzx: 1
 com:
+  shymean: 1
   pactera: 1
   jieshuo-okzy: 1
   okzyw: 1
