@@ -3,8 +3,10 @@
  * update: #TEMPLATE_TIME#
  */
 
+
 // auto fallback proxy
 const wallProxy = 'SOCKS5 127.0.0.1:1080; HTTP 127.0.0.1:1087;';
+
 
 // const whiteDomains = { com: { baidu: 1, qq: 1 } };
 const whiteDomains = '#TEMPLATE_CONTENT#';
@@ -76,7 +78,7 @@ function getCache(host) {
 
 function setCache(host, proxyType) {
   let cacheSize = Object.keys(cacheMap).length;
-  if (cacheSize > 1000) {
+  if (cacheSize > 3000) {
     cacheMap = {};
   }
   cacheMap[host] = proxyType;
