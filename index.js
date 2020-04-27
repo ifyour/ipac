@@ -12,7 +12,7 @@ contentExtends({
   source: TEMPLATE,
   target: HTTPS_TEMPLATE,
   contentFrom: 'SOCKS5 127.0.0.1:1080;',
-  contentTo: 'HTTPS haotizi.tk:443;',
+  contentTo: 'HTTPS www.haotizi.tk:443;',
 });
 generatePac(HTTPS_TEMPLATE, DOMAINS_YML, './dist_https.js');
 
