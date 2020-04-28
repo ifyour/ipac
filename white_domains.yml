@@ -7,6 +7,8 @@
 #   xin.com: 1 # 对应 xin.com.hk
 
 # 该名单为中国大陆网址白名单，以下网址不走代理
+design:
+  ant: 1
 asia:
   moecloud: 1
 lol:
