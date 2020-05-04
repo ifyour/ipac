@@ -10,7 +10,8 @@ const TIME_ZONE = 'Asia/Shanghai';
 const TEMPLATE = '../src/template.js';
 const DOMAINS_DB = '../src/white_domains.yml';
 
-console.log('debugger >>>>', path.resolve(__dirname, TEMPLATE));
+// fix：`TEMPLATE` 都是在异步方法中调用的，引用防止被 TreeShaking
+console.log(TEMPLATE);
 
 function getLastCommitTime() {
   return new Promise((resolve, reject) => {
