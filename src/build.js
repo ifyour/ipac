@@ -5,7 +5,7 @@ const { format, utcToZonedTime } = require('date-fns-tz');
 
 const contentExtends = require('./contentExtends');
 const TEMPLATE = './template.js';
-const HTTPS_TEMPLATE = './https_tmp.js';
+const HTTPS_TEMPLATE = '../dist/https_tmp.js';
 const DOMAINS_YML = './white_domains.yml';
 
 contentExtends({

@@ -10,6 +10,8 @@ const TIME_ZONE = 'Asia/Shanghai';
 const TEMPLATE = '../src/template.js';
 const DOMAINS_DB = '../src/white_domains.yml';
 
+console.log('debugger >>>>', path.resolve(__dirname, TEMPLATE));
+
 function getLastCommitTime() {
   return new Promise((resolve, reject) => {
     axios.get('https://api.github.com/repos/ifyour/ipac/branches/master')
