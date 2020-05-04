@@ -1,8 +1,8 @@
+
 const { writeFileSync, readFileSync } = require('fs');
 const path = require('path');
 const yamljs = require('yamljs');
 const { format, utcToZonedTime } = require('date-fns-tz');
-
 const contentExtends = require('./contentExtends');
 const TEMPLATE = './template.js';
 const HTTPS_TEMPLATE = './https_template.js';
