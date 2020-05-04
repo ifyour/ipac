@@ -5,7 +5,7 @@ const { format, utcToZonedTime } = require('date-fns-tz');
 
 const contentExtends = require('./contentExtends');
 const TEMPLATE = './template.js';
-const HTTPS_TEMPLATE = './https_tmp.js';
+const HTTPS_TEMPLATE = '../dist/https_tmp.js';
 const DOMAINS_YML = './white_domains.yml';
 
 contentExtends({
@@ -14,7 +14,8 @@ contentExtends({
   contentFrom: 'SOCKS5 127.0.0.1:1080;',
   contentTo: 'HTTPS haotizi.tk:443;',
 });
-generatePac(HTTPS_TEMPLATE, DOMAINS_YML, './dist_https.js');
+generatePac(TEMPLATE, DOMAINS_YML, '../dist/index.js');
+generatePac(HTTPS_TEMPLATE, DOMAINS_YML, '../dist/https.js');
 
 /**
  * generatePac

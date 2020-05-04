@@ -7,8 +7,8 @@ const { format, utcToZonedTime } = require('date-fns-tz');
 
 const TIME_FORMAT = 'yyyy-MM-dd HH:mm:ss';
 const TIME_ZONE = 'Asia/Shanghai';
-const TEMPLATE = '../template.js';
-const DOMAINS_DB = '../white_domains.yml';
+const TEMPLATE = '../src/template.js';
+const DOMAINS_DB = '../src/white_domains.yml';
 
 function getLastCommitTime() {
   return new Promise((resolve, reject) => {
