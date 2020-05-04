@@ -7,11 +7,9 @@ const { format, utcToZonedTime } = require('date-fns-tz');
 
 const TIME_FORMAT = 'yyyy-MM-dd HH:mm:ss';
 const TIME_ZONE = 'Asia/Shanghai';
-const TEMPLATE = '../src/template.js';
+const TEMPLATE_JS = '../src/template.js';
 const DOMAINS_DB = '../src/white_domains.yml';
 
-// fix：`TEMPLATE` 都是在异步方法中调用的，引用防止被 TreeShaking
-console.log(TEMPLATE);
 
 function getLastCommitTime() {
   return new Promise((resolve, reject) => {
@@ -33,7 +31,7 @@ function generatePac(
 ) {
   return new Promise(resolve => {
     const domains = yamljs.load(path.resolve(__dirname, DOMAINS_DB));
-    const buffer = readFileSync(path.resolve(__dirname, TEMPLATE));
+    const buffer = readFileSync(path.resolve(__dirname, TEMPLATE_JS));
     const data = buffer.toString('utf8')
       .replace(/#TEMPLATE_TIME#/g, lastCommitTime)
       .replace(/'#TEMPLATE_CONTENT#'/g, JSON.stringify(domains, null, 2))
