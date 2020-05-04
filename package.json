@@ -1,12 +1,12 @@
 {
-  "name": "ipac",
-  "version": "1.0.1",
+  "name": "@ifyour/ipac",
+  "version": "1.0.2",
   "description": "🗻 Self-use mainland China domain whitelist, full of bias.",
   "main": "index.js",
   "scripts": {
     "build": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "git add . && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags"
+    "release": "git add . && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
