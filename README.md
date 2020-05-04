@@ -59,6 +59,8 @@
 - https://ipac.now.sh/?s=1234
 - https://ipac.now.sh/?h=4321
 
+Note: `https://unpkg.com/@ifyour/ipac` does not support changing proxy IP and port numbers.
+
 ## License
 
 Licensed under [The WTFPL License](./LICENSE)
