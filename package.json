@@ -5,7 +5,6 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "node ./src/build.js",
-    "publish": "npm run build && npm run release",
     "release": "git add . && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish --access public"
   },
   "repository": {
