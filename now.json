@@ -7,7 +7,7 @@
     },
     {
       "src": "/https",
-      "dest": "/dist_https.js"
+      "dest": "/dist/dist_https.js"
     }
   ]
 }

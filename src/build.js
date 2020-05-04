@@ -14,7 +14,8 @@ contentExtends({
   contentFrom: 'SOCKS5 127.0.0.1:1080;',
   contentTo: 'HTTPS haotizi.tk:443;',
 });
-generatePac(HTTPS_TEMPLATE, DOMAINS_YML, './dist_https.js');
+generatePac(TEMPLATE, DOMAINS_YML, '../dist/index.js');
+generatePac(HTTPS_TEMPLATE, DOMAINS_YML, '../dist/https.js');
 
 /**
  * generatePac
