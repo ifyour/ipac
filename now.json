@@ -4,10 +4,6 @@
     {
       "src": "/",
       "dest": "/api/pac.js"
-    },
-    {
-      "src": "/https",
-      "dest": "/dist/https.js"
     }
   ]
 }
