@@ -1,20 +1,10 @@
 # 🗻 iPac
 
-<a href="https://gitpod.io/#https://github.com/ifyour/ipac">
-  <img src="https://img.shields.io/badge/Gitpod-ready-blue?logo=gitpod" />
-</a>
-<a href="https://unpkg.com/@ifyour/ipac">
-  <img src="https://badgen.net/npm/v/@ifyour/ipac" />
-</a>
-<a href="https://github.com/ifyour/ipac/graphs/contributors">
-  <img src="https://badgen.net/github/contributors/ifyour/ipac" />
-</a>
-<a href="https://github.com/ifyour/ipac/pulls?q=is%3Apr+sort%3Aupdated-desc+">
-  <img src="https://badgen.net/github/prs/ifyour/ipac" />
-</a>
-<a href="https://github.com/ifyour/ipac/blob/master/LICENSE">
-  <img src="https://badgen.net/github/license/ifyour/ipac" />
-</a>
+[![gitpod logo](https://img.shields.io/badge/gitpod-ready-blue?logo=gitpod)](https://gitpod.io/#https://github.com/ifyour/ipac)
+[![npm](https://badgen.net/npm/v/@ifyour/ipac)](https://unpkg.com/@ifyour/ipac)
+[![contributors](https://badgen.net/github/contributors/ifyour/ipac)](https://github.com/ifyour/ipac/graphs/contributors)
+[![prs](https://badgen.net/github/prs/ifyour/ipac)](https://github.com/ifyour/ipac/pulls?q=is%3Apr+sort%3Aupdated-desc+)
+[![license](https://badgen.net/github/license/ifyour/ipac)](https://github.com/ifyour/ipac/blob/master/LICENSE)
 
 > Another China domain whitelist for the SwitchyOmega plugin.
 
