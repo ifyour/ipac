@@ -3,8 +3,8 @@
 <a href="https://gitpod.io/#https://github.com/ifyour/ipac">
   <img src="https://img.shields.io/badge/Gitpod-ready-blue?logo=gitpod" />
 </a>
-<a href="https://github.com/ifyour/ipac/releases">
-  <img src="https://badgen.net/github/tag/ifyour/ipac" />
+<a href="https://unpkg.com/@ifyour/ipac">
+  <img src="https://badgen.net/npm/v/@ifyour/ipac" />
 </a>
 <a href="https://github.com/ifyour/ipac/graphs/contributors">
   <img src="https://badgen.net/github/contributors/ifyour/ipac" />
