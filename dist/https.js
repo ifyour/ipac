@@ -1,6 +1,6 @@
 /**
  * source：https://github.com/ifyour/ipac/
- * update: 2020-05-04 17:17:52
+ * update: 2020-05-06 22:28:45
  */
 
 
@@ -629,6 +629,9 @@ const whiteDomains = {
     "4006666688": 1,
     "4008000000": 1,
     "4008885166": 1,
+    "chiphell": 1,
+    "headphoneclub": 1,
+    "expreview": 1,
     "ksyungslb": 1,
     "tbcache": 1,
     "jikipedia": 1,
@@ -8833,6 +8836,7 @@ const whiteDomains = {
     "3304399": 1,
     "6259114": 1,
     "88353588": 1,
+    "erji": 1,
     "7qh": 1,
     "smtcdns": 1,
     "bcy": 1,
