@@ -1,4 +1,3 @@
-
 const { writeFileSync, readFileSync } = require('fs');
 const path = require('path');
 const yamljs = require('yamljs');
