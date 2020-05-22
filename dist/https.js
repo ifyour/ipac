@@ -1,11 +1,11 @@
 /**
  * source：https://github.com/ifyour/ipac/
- * update: 2020-05-06 22:28:45
+ * update: 2020-05-23 07:56:31
  */
 
 
 // auto fallback proxy
-const wallProxy = 'HTTPS haotizi.tk:443; HTTP 127.0.0.1:1087;';
+const wallProxy = 'HTTPS haotizi.tk:443; PROXY 127.0.0.1:1087;';
 
 
 // const whiteDomains = { com: { baidu: 1, qq: 1 } };
@@ -615,6 +615,7 @@ const whiteDomains = {
     "5741886": 1,
     "6168511": 1,
     "6677000": 1,
+    "7639616": 1,
     "7799520": 1,
     "9966333": 1,
     "9996270": 1,
@@ -629,6 +630,15 @@ const whiteDomains = {
     "4006666688": 1,
     "4008000000": 1,
     "4008885166": 1,
+    "300hu": 1,
+    "mi-img": 1,
+    "test-ipv6": 1,
+    "bigjpg": 1,
+    "smtcdns": 1,
+    "huabanimg": 1,
+    "rrys2019": 1,
+    "pgyer": 1,
+    "saraba1st": 1,
     "chiphell": 1,
     "headphoneclub": 1,
     "expreview": 1,
@@ -8758,6 +8768,7 @@ const whiteDomains = {
     "51": 1,
     "55": 1,
     "900": 1,
+    "zimuku": 1,
     "chaxun": 1,
     "iz": 1,
     "qzone": 1,
@@ -9756,6 +9767,7 @@ const whiteDomains = {
     "8855": 1,
     "60851": 1,
     "96399": 1,
+    "geekbang": 1,
     "91pic": 1,
     "pigai": 1,
     "ziyuanmao": 1,
@@ -9987,7 +9999,6 @@ const whiteDomains = {
     "ttedu": 1,
     "tzedu": 1,
     "visapro": 1,
-    "w3": 1,
     "wanjia": 1,
     "wcedu": 1,
     "whgh": 1,
@@ -10081,6 +10092,7 @@ const whiteDomains = {
     "9928": 1,
     "9998": 1,
     "19888": 1,
+    "rrys": 1,
     "fun": 1,
     "hy233": 1,
     "zimuzu": 1,
