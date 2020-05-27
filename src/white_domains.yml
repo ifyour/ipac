@@ -250,6 +250,12 @@ co:
   ychdzx: 1
 com:
   macwk: 1
+  300hu: 1
+  mi-img: 1
+  test-ipv6: 1
+  bigjpg: 1
+  smtcdns: 1
+  huabanimg: 1
   rrys2019: 1
   pgyer: 1
   saraba1st: 1
@@ -573,6 +579,7 @@ com:
   5741886: 1
   6168511: 1
   6677000: 1
+  7639616: 1
   7799520: 1
   9966333: 1
   9996270: 1
@@ -9724,6 +9731,7 @@ net:
   zzph: 1
   zzrc: 1
 org:
+  geekbang: 1
   1203: 1
   7188: 1
   8855: 1
@@ -9961,7 +9969,6 @@ org:
   ttedu: 1
   tzedu: 1
   visapro: 1
-  w3: 1
   wanjia: 1
   wcedu: 1
   whgh: 1
