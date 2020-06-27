@@ -260,6 +260,7 @@ com:
   macwk: 1
   300hu: 1
   mi-img: 1
+  miwifi: 1
   test-ipv6: 1
   bigjpg: 1
   smtcdns: 1
@@ -286,7 +287,6 @@ com:
   com-ok-baidu: 1
   pic-imges: 1
   xzokzyzy: 1
-  miwifi: 1
   17: 1
   28: 1
   35: 1
