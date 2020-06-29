@@ -123,6 +123,7 @@ const whiteDomains = {
     "aoyou": 1,
     "atax": 1,
     "baise": 1,
+    "famulei": 1,
     "bamaol": 1,
     "bczx": 1,
     "bendiw": 1,
