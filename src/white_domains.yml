@@ -184,7 +184,7 @@ cc:
   sgnet: 1
   sh021: 1
   shanhe: 1
-  zhainanmao.la: 1 
+  zhainanmao.la: 1
   shiyan: 1
   shuichan: 1
   sjhl: 1
@@ -263,6 +263,7 @@ com:
   mi-img: 1
   miwifi: 1
   test-ipv6: 1
+  f.video.weibocdn: 1
   bigjpg: 1
   smtcdns: 1
   huabanimg: 1
