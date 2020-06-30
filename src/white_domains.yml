@@ -185,7 +185,6 @@ cc:
   sgnet: 1
   sh021: 1
   shanhe: 1
-  zhainanmao.la: 1
   shiyan: 1
   shuichan: 1
   sjhl: 1
@@ -198,8 +197,9 @@ cc:
   tcnews: 1
   tcxw: 1
   teambuy: 1
+  zhainanmao.la.cc: 1
+  xx.xxx.webocdn: 1
   tkw: 1
-  f.video.weibocdn: 1
   tuku: 1
   tyn: 1
   ujian: 1
