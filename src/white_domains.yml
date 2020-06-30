@@ -197,7 +197,6 @@ cc:
   tcxw: 1
   teambuy: 1
   zhainanmao.la: 1
-  webocdn: 1
   tkw: 1
   tuku: 1
   tyn: 1
@@ -251,6 +250,7 @@ co:
   ychdzx: 1
 com:
   zhipin: 1
+  webocdn: 1
   xiaomiyoupin: 1
   dareu: 1
   edgesrv: 1
