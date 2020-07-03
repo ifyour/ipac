@@ -1,6 +1,6 @@
 /**
  * source：https://github.com/ifyour/ipac/
- * update: 2020-05-23 07:56:31
+ * update: 2020-05-28 22:13:56
  */
 
 
@@ -10,9 +10,6 @@ const wallProxy = 'SOCKS5 127.0.0.1:1080; PROXY 127.0.0.1:1087;';
 
 // const whiteDomains = { com: { baidu: 1, qq: 1 } };
 const whiteDomains = {
-  "design": {
-    "ant": 1
-  },
   "asia": {
     "moecloud": 1
   },
@@ -259,6 +256,7 @@ const whiteDomains = {
   },
   "co": {
     "425300": 1,
+    "edgesrv": 1,
     "okzy": 1,
     "v2ex": 1,
     "meijubie": 1,
@@ -630,6 +628,14 @@ const whiteDomains = {
     "4006666688": 1,
     "4008000000": 1,
     "4008885166": 1,
+    "dareu": 1,
+    "edgesrv": 1,
+    "videojj": 1,
+    "leigod": 1,
+    "nn": 1,
+    "download02.xiaohulu": 1,
+    "obsapp": 1,
+    "macwk": 1,
     "300hu": 1,
     "mi-img": 1,
     "test-ipv6": 1,

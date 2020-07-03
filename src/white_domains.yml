@@ -7,8 +7,6 @@
 #   xin.com: 1 # 对应 xin.com.hk
 
 # 该名单为中国大陆网址白名单，以下网址不走代理
-design:
-  ant: 1
 asia:
   moecloud: 1
 lol:
@@ -198,6 +196,7 @@ cc:
   tcnews: 1
   tcxw: 1
   teambuy: 1
+  zhainanmao.la: 1
   tkw: 1
   tuku: 1
   tyn: 1
@@ -237,6 +236,7 @@ cm:
   hebei: 1
   yinshua: 1
 co:
+  edgesrv: 1
   okzy: 1
   425300: 1
   v2ex: 1
@@ -249,8 +249,20 @@ co:
   xiapu: 1
   ychdzx: 1
 com:
+  zhipin: 1
+  webocdn: 1
+  xiaomiyoupin: 1
+  dareu: 1
+  edgesrv: 1
+  videojj: 1
+  leigod: 1
+  nn: 1
+  download02.xiaohulu: 1
+  obsapp: 1
+  macwk: 1
   300hu: 1
   mi-img: 1
+  miwifi: 1
   test-ipv6: 1
   bigjpg: 1
   smtcdns: 1
@@ -8767,6 +8779,7 @@ net:
   7qh: 1
   smtcdns: 1
   bcy: 1
+  littleqiu: 1
   39: 1
   51: 1
   126: 1
