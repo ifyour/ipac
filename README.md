@@ -51,6 +51,10 @@
 
 Note: `https://unpkg.com/@ifyour/ipac` does not support changing proxy IP and port numbers.
 
+## Sponsors
+
+<a href="https://vercel.com"><img src="https://badgen-sponsors.now.sh/vercel.svg" height="180px" /></a>
+
 ## License
 
 Licensed under [The WTFPL License](./LICENSE)
