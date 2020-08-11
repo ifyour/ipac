@@ -27,9 +27,11 @@
 </p>
 
 - Open SwitchyOmega and select `New Profile`
-- Select the `PAC profile` option with any name you want.
+- Select the `PAC profile` option with any name you want
 - PAC web site filled in `https://ipac.now.sh/` or `https://unpkg.com/@ifyour/ipac`
 - Click `update immediately`, then save
+
+For a more detailed usage, please refer to [the discussion here](https://github.com/ifyour/ipac/issues/41). 😉
 
 ## API
 
