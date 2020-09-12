@@ -7,6 +7,10 @@
 #   xin.com: 1 # 对应 xin.com.hk
 
 # 该名单为中国大陆网址白名单，以下网址不走代理
+cn:
+  littleservice: 1
+  blizzard: 1
+  17zuoye: 1  
 asia:
   moecloud: 1
 lol:
