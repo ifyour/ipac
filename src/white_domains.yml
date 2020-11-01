@@ -11,6 +11,8 @@ asia:
   moecloud: 1
 lol:
   bilibili: 1
+pro:
+  cubox: 1
 app:
   wemp: 1
 ai:
@@ -251,14 +253,22 @@ co:
   ychdzx: 1
 com:
   manmanbuy: 1
+  asuscomm: 1
   99zhuangyuan: 1
   u5h5: 1
   u5kk: 1
   huanxi: 1
+  pinyuncloud: 1
+  17xueba: 1
+  17zuoye: 1
+  alidns: 1
+  114dns: 1
   yaoyl: 1
   00cdn: 1
   scoregg: 1
   dy8c: 1
+  yuanshen: 1
+  mihoyo: 1
   zhainancat: 1
   5aikp: 1
   famulei: 1
@@ -278,6 +288,8 @@ com:
   nn: 1
   download02.xiaohulu: 1
   afdiancdn: 1
+  fydeos: 1
+  flintos: 1
   obsapp: 1
   macwk: 1
   300hu: 1
@@ -285,6 +297,7 @@ com:
   miwifi: 1
   tianyancha: 1
   test-ipv6: 1
+  cowtransfer: 1
   bigjpg: 1
   smtcdns: 1
   cdntips: 1
@@ -5311,6 +5324,7 @@ com:
   ksbao: 1
   ksbbs: 1
   kskino: 1
+  ksyun: 1
   ktvcity: 1
   ktxp: 1
   ku6: 1
@@ -6096,6 +6110,7 @@ com:
   otcms: 1
   oujiangrc: 1
   ourbloom: 1
+  ourdvsss: 1
   ourgame: 1
   ourxun: 1
   oussko: 1
@@ -7545,6 +7560,7 @@ com:
   weathercn: 1
   web3389: 1
   web4008: 1
+  airdroid: 1
   webjx: 1
   webpowerchina: 1
   webterren: 1
@@ -10124,6 +10140,7 @@ tv:
   shiqian: 1
   wasu: 1
   weihai: 1
+  xiaoka: 1
   zhenping: 1
   zohi: 1
 tw:
