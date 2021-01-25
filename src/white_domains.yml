@@ -16,6 +16,7 @@ pro:
 app:
   wemp: 1
 ai:
+  imomoe: 1
   deepvision: 1
 wiki:
   huiji: 1
