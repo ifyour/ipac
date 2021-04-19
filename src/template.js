@@ -1,7 +1,7 @@
 /**
  * Source: https://github.com/ifyour/ipac
  * Update: #TEMPLATE_TIME#
- * Hosted: https://vercel.com/?utm_source=ipac
+ * Usage:  https://github.com/ifyour/ipac#api
  */
 
 
