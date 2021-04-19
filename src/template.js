@@ -1,7 +1,6 @@
 /**
  * Source: https://github.com/ifyour/ipac
  * Update: #TEMPLATE_TIME#
- * Usage:  https://github.com/ifyour/ipac#api
  */
 
 
