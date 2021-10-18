@@ -1,11 +1,12 @@
 /**
- * source：https://github.com/ifyour/ipac/
- * update: 2020-05-28 22:13:56
+ * Source: https://github.com/ifyour/ipac
+ * Update: 2020-07-29 21:44:47
+ * Hosted: https://vercel.com/?utm_source=ipac
  */
 
 
 // auto fallback proxy
-const wallProxy = 'HTTPS haotizi.tk:443; PROXY 127.0.0.1:1087;';
+const wallProxy = 'HTTPS dl.mingming.dev:443; PROXY 127.0.0.1:1087;';
 
 
 // const whiteDomains = { com: { baidu: 1, qq: 1 } };
@@ -214,6 +215,7 @@ const whiteDomains = {
     "tcnews": 1,
     "tcxw": 1,
     "teambuy": 1,
+    "zhainanmao.la": 1,
     "tkw": 1,
     "tuku": 1,
     "tyn": 1,
@@ -257,6 +259,7 @@ const whiteDomains = {
   "co": {
     "425300": 1,
     "edgesrv": 1,
+    "languang": 1,
     "okzy": 1,
     "v2ex": 1,
     "meijubie": 1,
@@ -628,6 +631,22 @@ const whiteDomains = {
     "4006666688": 1,
     "4008000000": 1,
     "4008885166": 1,
+    "yaoyl": 1,
+    "00cdn": 1,
+    "scoregg": 1,
+    "dy8c": 1,
+    "zhainancat": 1,
+    "5aikp": 1,
+    "famulei": 1,
+    "zhipin": 1,
+    "miaopai": 1,
+    "h5tk.p2plive.8686c": 1,
+    "wscdns": 1,
+    "lanzoux": 1,
+    "xycdn": 1,
+    "weibocdn": 1,
+    "bojianger": 1,
+    "xiaomiyoupin": 1,
     "dareu": 1,
     "edgesrv": 1,
     "videojj": 1,
@@ -638,9 +657,12 @@ const whiteDomains = {
     "macwk": 1,
     "300hu": 1,
     "mi-img": 1,
+    "miwifi": 1,
+    "tianyancha": 1,
     "test-ipv6": 1,
     "bigjpg": 1,
     "smtcdns": 1,
+    "cdntips": 1,
     "huabanimg": 1,
     "rrys2019": 1,
     "pgyer": 1,
@@ -4600,7 +4622,6 @@ const whiteDomains = {
     "hunqingren": 1,
     "hunt007": 1,
     "hunuo": 1,
-    "huobi": 1,
     "huoche": 1,
     "huochepiao": 1,
     "huochepu": 1,
@@ -8782,6 +8803,7 @@ const whiteDomains = {
   },
   "me": {
     "ddrk": 1,
+    "zxzj": 1,
     "ele": 1,
     "diaodiaode": 1,
     "qbox": 1,
@@ -8857,6 +8879,7 @@ const whiteDomains = {
     "7qh": 1,
     "smtcdns": 1,
     "bcy": 1,
+    "littleqiu": 1,
     "biliapi": 1,
     "ooklaserver": 1,
     "xxgame": 1,

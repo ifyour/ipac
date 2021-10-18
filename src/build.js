@@ -2,6 +2,7 @@ const { writeFileSync, readFileSync } = require('fs');
 const path = require('path');
 const yamljs = require('yamljs');
 const { format, utcToZonedTime } = require('date-fns-tz');
+
 const contentExtends = require('./contentExtends');
 const TEMPLATE = './template.js';
 const HTTPS_TEMPLATE = './https_template.js';
@@ -11,7 +12,7 @@ contentExtends({
   source: TEMPLATE,
   target: HTTPS_TEMPLATE,
   contentFrom: 'SOCKS5 127.0.0.1:1080;',
-  contentTo: 'HTTPS haotizi.tk:443;',
+  contentTo: 'HTTPS dl.mingming.dev:443;',
 });
 generatePac(TEMPLATE, DOMAINS_YML, '../dist/index.js');
 generatePac(HTTPS_TEMPLATE, DOMAINS_YML, '../dist/https.js');

@@ -11,9 +11,12 @@ asia:
   moecloud: 1
 lol:
   bilibili: 1
+pro:
+  cubox: 1
 app:
   wemp: 1
 ai:
+  imomoe: 1
   deepvision: 1
 wiki:
   huiji: 1
@@ -237,6 +240,7 @@ cm:
   yinshua: 1
 co:
   edgesrv: 1
+  languang: 1
   okzy: 1
   425300: 1
   v2ex: 1
@@ -249,8 +253,51 @@ co:
   xiapu: 1
   ychdzx: 1
 com:
+  ctfhub: 1
+  bdcloudapi: 1
+  novipnoad: 1
+  ksyna: 1
+  eccdnx: 1
+  bscstorage: 1
+  tnkjmec: 1
+  wmsj: 1
+  8686c: 1
+  golink: 1
+  zuyushop: 1
+  ixigua: 1
+  hibixin: 1
+  img898: 1
+  uu898: 1
+  118pan: 1
+  39395.xc.acq42: 1
+  manmanbuy: 1
+  asuscomm: 1
+  99zhuangyuan: 1
+  u5h5: 1
+  u5kk: 1
+  huanxi: 1
+  pinyuncloud: 1
+  17xueba: 1
+  17zuoye: 1
+  alidns: 1
+  114dns: 1
+  yaoyl: 1
+  00cdn: 1
+  scoregg: 1
+  dy8c: 1
+  yuanshen: 1
+  mihoyo: 1
+  zhainancat: 1
+  5aikp: 1
+  famulei: 1
   zhipin: 1
-  webocdn: 1
+  miaopai: 1
+  h5tk.p2plive.8686c: 1
+  wscdns: 1
+  lanzoux: 1
+  xycdn: 1
+  weibocdn: 1
+  bojianger: 1
   xiaomiyoupin: 1
   dareu: 1
   edgesrv: 1
@@ -258,14 +305,20 @@ com:
   leigod: 1
   nn: 1
   download02.xiaohulu: 1
+  afdiancdn: 1
+  fydeos: 1
+  flintos: 1
   obsapp: 1
   macwk: 1
   300hu: 1
   mi-img: 1
   miwifi: 1
+  tianyancha: 1
   test-ipv6: 1
+  cowtransfer: 1
   bigjpg: 1
   smtcdns: 1
+  cdntips: 1
   huabanimg: 1
   rrys2019: 1
   pgyer: 1
@@ -780,7 +833,6 @@ com:
   chimeiju: 1
   meijubie: 1
   koudaitong: 1
-  gravatar: 1
   guoziweb: 1
   meikew: 1
   kyad88: 1
@@ -2358,6 +2410,8 @@ com:
   best73: 1
   bestb2b: 1
   besttrav: 1
+  bet365: 1
+  365-868: 1
   betrad: 1
   beva: 1
   bf35: 1
@@ -2380,6 +2434,7 @@ com:
   bijirim: 1
   biketo: 1
   bilibili: 1
+  bilibilihelper: 1
   biligame: 1
   bilinstar: 1
   bincailiuxue: 1
@@ -3444,6 +3499,7 @@ com:
   donews: 1
   dongao: 1
   dongbeiol: 1
+  dongchedi: 1
   dongeedu: 1
   dongfang: 1
   dongfang8: 1
@@ -3853,6 +3909,8 @@ com:
   flssw: 1
   fltrp: 1
   flyxg: 1
+  flyert: 1
+  flyertea: 1
   fnkq: 1
   fnrcw: 1
   fobshanghai: 1
@@ -4590,7 +4648,6 @@ com:
   hunqingren: 1
   hunt007: 1
   hunuo: 1
-  huobi: 1
   huoche: 1
   huochepiao: 1
   huochepu: 1
@@ -5244,6 +5301,7 @@ com:
   kaozc: 1
   kazakhsoft: 1
   kb-medical: 1
+  kcdnvip: 1
   kds100: 1
   kdslife: 1
   kedou: 1
@@ -5290,6 +5348,7 @@ com:
   ksbao: 1
   ksbbs: 1
   kskino: 1
+  ksyun: 1
   ktvcity: 1
   ktxp: 1
   ku6: 1
@@ -5544,6 +5603,7 @@ com:
   lsdag: 1
   lsgzn: 1
   lsnetlib: 1
+  lsqpay: 1
   lsrczpw: 1
   lssdjt: 1
   lssen: 1
@@ -6075,6 +6135,7 @@ com:
   otcms: 1
   oujiangrc: 1
   ourbloom: 1
+  ourdvsss: 1
   ourgame: 1
   ourxun: 1
   oussko: 1
@@ -7406,7 +7467,6 @@ com:
   uzai: 1
   uzaicdn: 1
   uzzf: 1
-  v2ex: 1
   v312: 1
   v3gp: 1
   value500: 1
@@ -7524,6 +7584,7 @@ com:
   weathercn: 1
   web3389: 1
   web4008: 1
+  airdroid: 1
   webjx: 1
   webpowerchina: 1
   webterren: 1
@@ -8229,6 +8290,7 @@ com:
   youxiwangguo: 1
   youyuan: 1
   youyy: 1
+  youzan: 1
   youzu: 1
   yoyobaby: 1
   yoyojie: 1
@@ -8760,6 +8822,7 @@ la:
   ulinix: 1
 me:
   ddrk: 1
+  zxzj: 1
   ele: 1
   diaodiaode: 1
   qbox: 1
@@ -8837,6 +8900,7 @@ net:
   qy: 1
   cnky: 1
   uxengine: 1
+  afdian: 1
   clewm: 1
   baizhan: 1
   funshion: 1
@@ -10101,6 +10165,7 @@ tv:
   shiqian: 1
   wasu: 1
   weihai: 1
+  xiaoka: 1
   zhenping: 1
   zohi: 1
 tw:

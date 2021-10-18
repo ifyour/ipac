@@ -27,19 +27,21 @@
 </p>
 
 - Open SwitchyOmega and select `New Profile`
-- Select the `PAC profile` option with any name you want.
+- Select the `PAC profile` option with any name you want
 - PAC web site filled in `https://ipac.now.sh/` or `https://unpkg.com/@ifyour/ipac`
 - Click `update immediately`, then save
+
+For a more detailed usage, please refer to [the discussion here](https://github.com/ifyour/ipac/issues/41). 😉
 
 ## API
 
 ### GET `/`
 
-| Param  | Type     | Default   | Require | Description             |
-| ------ | -------- | --------- | ------- | ----------------------- |
-| socks5 | `number` | 1080      | false   | SOCKS5 port, short: `s` |
-| http   | `number` | 1087      | false   | HTTP port, short: `h`   |
-| ip     | `string` | 127.0.0.1 | false   | Default proxy host      |
+| Param  | Short | Default   | Description        | Require |
+| ------ | ----- | --------- | ------------------ | ------- |
+| ip     | `ip`  | 127.0.0.1 | Default proxy host | false   |
+| socks5 | `s`   | 1080      | SOCKS5 port        | false   |
+| http   | `h`   | 1087      | HTTP port          | false   |
 
 **Example**
 
@@ -50,6 +52,10 @@
 - https://ipac.now.sh/?h=4321
 
 Note: `https://unpkg.com/@ifyour/ipac` does not support changing proxy IP and port numbers.
+
+## Sponsors
+
+<a href="https://vercel.com"><img src="https://badgen-sponsors.now.sh/vercel.svg" height="180px" /></a>
 
 ## License
 
